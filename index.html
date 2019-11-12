@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="shortcut icon" href="http://www.zadulmaadmandiri.com/images/icon.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PT Zadulmaad Mandiri - Travel Haji &amp; Umroh Amanah</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+    <style type="text/css">
+        .bg-native {
+            background-image: url("http://www.zadulmaadmandiri.com/images/bg-home.jpg");
+            background-position-y: center;
+        }
+
+        .padding-a {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .bg-black {
+            background-color: black;
+            color: white;
+        }
+
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+    </style>
+    <style>
+        .bgclass {
+            background: linear-gradient(to right, rgba(255, 0, 0, 0), rgb(22, 92, 13)), url('asset/makkah-2217852_1280.jpg');
+            width: 100%;
+            height: 100%;
+            background-repeat: no-repeat;
+        }
+
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        var scrolltotop = {
+            setting: {
+                startline: 100,
+                scrollto: 0,
+                scrollduration: 1e3,
+                fadeduration: [500, 100]
+            },
+            controlHTML: '<img src="https://i1155.photobucket.com/albums/p559/scrolltotop/arrow11.png" />',
+            controlattrs: {
+                offsetx: 5,
+                offsety: 5
+            },
+            anchorkeyword: "#top",
+            state: {
+                isvisible: !1,
+                shouldvisible: !1
+            },
+            scrollup: function () {
+                this.cssfixedsupport || this.$control.css({
+                    opacity: 0
+                });
+                var t = isNaN(this.setting.scrollto) ? this.setting.scrollto : parseInt(this.setting.scrollto);
+                t = "string" == typeof t && 1 == jQuery("#" + t).length ? jQuery("#" + t).offset().top : 0, this
+                    .$body.animate({
+                        scrollTop: t
+                    }, this.setting.scrollduration)
+            },
+            keepfixed: function () {
+                var t = jQuery(window),
+                    o = t.scrollLeft() + t.width() - this.$control.width() - this.controlattrs.offsetx,
+                    s = t.scrollTop() + t.height() - this.$control.height() - this.controlattrs.offsety;
+                this.$control.css({
+                    left: o + "px",
+                    top: s + "px"
+                })
+            },
+            togglecontrol: function () {
+                var t = jQuery(window).scrollTop();
+                this.cssfixedsupport || this.keepfixed(), this.state.shouldvisible = t >= this.setting
+                    .startline ? !0 : !1, this.state.shouldvisible && !this.state.isvisible ? (this.$control
+                        .stop().animate({
+                            opacity: 1
+                        }, this.setting.fadeduration[0]), this.state.isvisible = !0) : 0 == this.state
+                    .shouldvisible && this.state.isvisible && (this.$control.stop().animate({
+                        opacity: 0
+                    }, this.setting.fadeduration[1]), this.state.isvisible = !1)
+            },
+            init: function () {
+                jQuery(document).ready(function (t) {
+                    var o = scrolltotop,
+                        s = document.all;
+                    o.cssfixedsupport = !s || s && "CSS1Compat" == document.compatMode && window
+                        .XMLHttpRequest, o.$body = t(window.opera ? "CSS1Compat" == document
+                            .compatMode ? "html" : "body" : "html,body"), o.$control = t(
+                            '<div id="topcontrol">' + o.controlHTML + "</div>").css({
+                            position: o.cssfixedsupport ? "fixed" : "absolute",
+                            bottom: o.controlattrs.offsety,
+                            right: o.controlattrs.offsetx,
+                            opacity: 0,
+                            cursor: "pointer"
+                        }).attr({
+                            title: "Scroll to Top"
+                        }).click(function () {
+                            return o.scrollup(), !1
+                        }).appendTo("body"), document.all && !window.XMLHttpRequest && "" != o.$control
+                        .text() && o.$control.css({
+                            width: o.$control.width()
+                        }), o.togglecontrol(), t('a[href="' + o.anchorkeyword + '"]').click(
+                            function () {
+                                return o.scrollup(), !1
+                            }), t(window).bind("scroll resize", function (t) {
+                            o.togglecontrol()
+                        })
+                })
+            }
+        };
+        scrolltotop.init();
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+
+            // Get all "navbar-burger" elements
+            const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+            // Check if there are any navbar burgers
+            if ($navbarBurgers.length > 0) {
+
+                // Add a click event on each of them
+                $navbarBurgers.forEach(el => {
+                    el.addEventListener('click', () => {
+
+                        // Get the target from the "data-target" attribute
+                        const target = el.dataset.target;
+                        const $target = document.getElementById(target);
+
+                        // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+                        el.classList.toggle('is-active');
+                        $target.classList.toggle('is-active');
+
+                    });
+                });
+            }
+
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+
+            // Check for click events on the navbar burger icon
+            $(".navbar-burger").click(function () {
+
+                // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+                $(".navbar-burger").toggleClass("is-active");
+                $(".navbar-menu").toggleClass("is-active");
+
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <!--HEADER-->
+    <section class="hero is-medium bg-native">
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <img src="http://www.zadulmaadmandiri.com/images/ZMM-LOGO-small.png?5b4ef9e7" style="width:200px;">
+                <h3 class="subtitle has-text-white">
+                    Dapatkan Kepastian Perjalanan <br> Ibadah Haji & Umroh Anda Bersama
+                </h3>
+                <h1 class="title has-text-warning">
+                    Zadulmaad Mandiri
+                </h1>
+            </div>
+        </div>
+    </section>
+    <!--END HEADER-->
+
+    <!--NAVBAR-->
+    <nav class="navbar is-fixed-top is-dark" role="navigation" aria-label="main navigation">
+        <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-start">
+                <a class="navbar-item">
+                    <span>Beranda</span>
+                </a>
+
+                <a class="navbar-item">
+                    Tentang Kami
+                </a>
+
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link">
+                        Paket
+                    </a>
+
+                    <div class="navbar-dropdown">
+                        <a class="navbar-item">
+                            Haji
+                        </a>
+                        <a class="navbar-item">
+                            Umroh
+                        </a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item">
+                            Kontak Kami
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="navbar-brand">
+            <div class="navbar-end">
+                <div class="navbar-item">
+                    <div class="buttons">
+                        <a class="button is-warning">
+                            <strong>Daftar</strong>
+                        </a>
+                        <a class="button is-light">
+                            Masuk
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
+                data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+    </nav>
+    <!--END NAVBAR-->
+
+    <!--MAIN CONTENT-->
+    <div class="container is-fluid padding-a">
+        <div class="columns">
+            <div class="column is-4">
+                <div class="box">
+                    <div class="tile is-child box notification is-success padding-b">
+                        <h4 class="subtitle has-text-centered">
+                            <strong class="has-text-white">
+                                Temukan Paket Umroh <br> Terbaik Anda
+                            </strong>
+                        </h4>
+                    </div>
+                    <form class="padding-a">
+                        <div class="field">
+                            <label class="label has-text-centered">Tanggal Berangkat</label>
+                            <div class="control is-expanded">
+                                <div class="select is-fullwidth">
+                                    <select name="country">
+                                        <option value="#">Satu</option>
+                                        <option value="#">Dua</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label class="label has-text-centered">Kota Keberangkatan</label>
+                            <div class="control is-expanded">
+                                <div class="select is-fullwidth">
+                                    <select name="country">
+                                        <option value="#">Satu</option>
+                                        <option value="#">Dua</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label class="label has-text-centered">Lama Perjalanan</label>
+                            <div class="control is-expanded">
+                                <div class="select is-fullwidth">
+                                    <select name="country">
+                                        <option value="#">Satu</option>
+                                        <option value="#">Dua</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label class="label has-text-centered">Harga Paket</label>
+                            <div class="control is-expanded">
+                                <div class="select is-fullwidth">
+                                    <select name="country">
+                                        <option value="#">Satu</option>
+                                        <option value="#">Dua</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="field is-grouped is-grouped-centered">
+                            <p class="control">
+                                <a class="button is-warning">
+                                    Cari
+                                </a>
+                            </p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="column is-8">
+                <div class="box">
+                    <div class="container has-text-centered padding-a">
+                        <h3 class="subtitle">
+                            <strong> Paket Umrah </strong>
+                        </h3>
+                        <h1 class="title has-text-success">
+                            Segera berangkat
+                        </h1>
+                    </div>
+                    <div class="tile is-ancestor">
+                        <div class="tile is- is-parent">
+                            <div class="card">
+                                <div class="card-image">
+                                    <figure class="image is-4by3">
+                                        <img src="https://bulma.io/images/placeholders/1280x960.png"
+                                            alt="Placeholder image">
+                                    </figure>
+                                </div>
+                                <div class="card-content">
+                                    <div class="media">
+                                        <div class="media-left">
+                                            <figure class="image is-48x48">
+                                                <img src="https://bulma.io/images/placeholders/96x96.png"
+                                                    alt="Placeholder image">
+                                            </figure>
+                                        </div>
+                                        <div class="media-content">
+                                            <p class="title is-4">John Smith</p>
+                                            <p class="subtitle is-6">@johnsmith</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="content">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                        Phasellus nec iaculis mauris. <a>@bulmaio</a>.
+                                        <a href="#">#css</a> <a href="#">#responsive</a>
+                                        <br>
+                                        <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                                    </div>
+                                    <footer class="card-footer">
+                                        <a href="#" class="card-footer-item has-text-success"><b>Lihat Detail</b></a>
+                                    </footer>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tile is-4 is-parent">
+                            <div class="card">
+                                <div class="card-image">
+                                    <figure class="image is-4by3">
+                                        <img src="https://bulma.io/images/placeholders/1280x960.png"
+                                            alt="Placeholder image">
+                                    </figure>
+                                </div>
+                                <div class="card-content">
+                                    <div class="media">
+                                        <div class="media-left">
+                                            <figure class="image is-48x48">
+                                                <img src="https://bulma.io/images/placeholders/96x96.png"
+                                                    alt="Placeholder image">
+                                            </figure>
+                                        </div>
+                                        <div class="media-content">
+                                            <p class="title is-4">John Smith</p>
+                                            <p class="subtitle is-6">@johnsmith</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="content">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                        Phasellus nec iaculis mauris. <a>@bulmaio</a>.
+                                        <a href="#">#css</a> <a href="#">#responsive</a>
+                                        <br>
+                                        <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                                    </div>
+                                    <footer class="card-footer">
+                                        <a href="#" class="card-footer-item has-text-success"><b>Lihat Detail</b></a>
+                                    </footer>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tile is-4 is-parent">
+                            <div class="card">
+                                <div class="card-image">
+                                    <figure class="image is-4by3">
+                                        <img src="https://bulma.io/images/placeholders/1280x960.png"
+                                            alt="Placeholder image">
+                                    </figure>
+                                </div>
+                                <div class="card-content">
+                                    <div class="media">
+                                        <div class="media-left">
+                                            <figure class="image is-48x48">
+                                                <img src="https://bulma.io/images/placeholders/96x96.png"
+                                                    alt="Placeholder image">
+                                            </figure>
+                                        </div>
+                                        <div class="media-content">
+                                            <p class="title is-4">John Smith</p>
+                                            <p class="subtitle is-6">@johnsmith</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="content">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                        Phasellus nec iaculis mauris. <a>@bulmaio</a>.
+                                        <a href="#">#css</a> <a href="#">#responsive</a>
+                                        <br>
+                                        <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                                    </div>
+                                    <footer class="card-footer">
+                                        <a href="#" class="card-footer-item has-text-success"><b>Lihat Detail</b></a>
+                                    </footer>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--BUTTON-->
+                    <div class="container has-text-centered padding-a">
+                        <button class="button is-success is-light">Lihat Semua Paket</button>
+                    </div>
+                    <!--END OF BUTTON-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--END MAIN CONTENT-->
+
+    <!--MAIN CONTENT 2-->
+    <div class="container bgclass">
+        <div class="columns">
+            <div class="column is-5">
+            </div>
+            <div class="column is-7" style="height: 300px;">
+                <p class="title is-1 has-text-white">Sudah Siap Berangkat Haji?</p>
+                <p class="subtitle has-text-white">
+                    Kami Berusaha membuat Ibadah Haji Anda senyaman mungkin, dengan tujuan semoga Allah menerima amal
+                    ibadah kita sesuai ketentuan Al-Qur'an dan As-Sunnah
+                </p>
+                <div class="buttons">
+                    <a class="button is-warning">
+                        <strong>Daftar</strong>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--END OF MAIN CONTENT 2-->
+
+    <!--REASON-->
+
+    <div class="container padding-a">
+        <div class="box">
+            <div class="container has-text-centered padding-a">
+                <h3 class="subtitle">
+                    <strong> Mengapa Memilih </strong>
+                </h3>
+                <h1 class="title has-text-success">
+                    Zadulmaad Mandiri
+                </h1>
+            </div>
+            <div class="columns">
+                <div class="column is-6">
+                    <!---->
+                    <div class="columns">
+                        <div class="column is-3">
+                            <figure class="image is-96x96"><img src="asset/PLANE.png" class="clearfix"></figure>
+                        </div>
+                        <div class="column is-9">
+                            <p class="title is-5">TITLE</p>
+                            <p class="subtitle">SUBTITLE</p>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="columns">
+                        <div class="column is-3">
+                            <figure class="image is-96x96"><img src="asset/CERTIFICATE.png" class="clearfix"></figure>
+                        </div>
+                        <div class="column is-9">
+                            <p class="title is-5">TITLE</p>
+                            <p class="subtitle">SUBTITLE</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-6" style="height: 300px;">
+                    <!---->
+                    <div class="columns">
+                        <div class="column is-3">
+                            <figure class="image is-96x96"><img src="asset/EASLY.png" class="clearfix"></figure>
+                        </div>
+                        <div class="column is-9">
+                            <p class="title is-5">TITLE</p>
+                            <p class="subtitle">SUBTITLE</p>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="columns">
+                        <div class="column is-3">
+                            <figure class="image is-96x96"><img src="asset/PRICE.png" class="clearfix"></figure>
+                        </div>
+                        <div class="column is-9">
+                            <p class="title is-5">TITLE</p>
+                            <p class="subtitle">SUBTITLE</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--END OF REASON-->
+
+    <!--FOOTER-->
+    <footer class="footer">
+        <div class="content">
+            <p class="has-text-centered title">
+                <strong>Mitra Perjalanan Kami</strong>
+            </p>
+            <div class="columns">
+                <div class="column is-2 center">
+                    <figure class="image is-2by1">
+                        <img src="asset/saudia.png">
+                    </figure>
+                </div>
+                <div class="column is-2 center">
+                    <figure class="image is-3by1">
+                        <img src="asset/garuda.png">
+                    </figure>
+                </div>
+                <div class="column is-2 center">
+                    <figure class="image is-3by1">
+                        <img src="asset/etihad.png">
+                    </figure>
+                </div>
+                <div class="column is-2 center">
+                    <figure class="image is-3by1">
+                        <img src="asset/emirates.png">
+                    </figure>
+                </div>
+                <div class="column is-2 center">
+                    <figure class="image is-3by1">
+                        <img src="asset/qatar.png">
+                    </figure>
+                </div>
+            </div>
+            <div class="columns">
+                <div class="column is-3">
+                    <figure>
+                        <img src="asset/Zadulmaad.png">
+                    </figure>
+                </div>
+                <div class="column is-3">
+                    <p class="title is-5">Kantor Pusat</p>
+                    <p class="subtitle">Jl. Dongkal Kel. Sukatani Kec. Tapos Kota Depok Jawa Barat 16454</p>
+                </div>
+                <div class="column is-3">
+                    <p class="title is-5">Kontak Kami</p>
+                    <p class="subtitle">0852-8664-7286<br>info@zadulmaadmandiri.com</p>
+                </div>
+                <div class="column is-3">
+                    <p class="title is-5">Ikuti Kami</p>
+                    <span class="icon">
+                        <a>
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </span>
+                    <span class="icon">
+                        <a>
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                    </span>
+                    <span class="icon">
+                        <a>
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </span>
+                    <span class="icon">
+                        <a>
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
